@@ -6,7 +6,7 @@ const Search = () => {
       <h2 className='text-3xl font-semibold mb-10'>
         The best free high resolution photos
       </h2>
-      <input className='p-2 border  w-[700px]' />
+      <input className='p-2 border w-full' />
     </div>
   )
 }

@@ -6,7 +6,7 @@ import Photos from './src/components/Photos'
 export default function Home() {
   return (
     <div className='font-sans'>
-      <div className='w-[1200px] mx-auto'>
+      <div className='max-w-[1200px] mx-auto'>
         <Navbar />
         <Search />
         <Photos />
