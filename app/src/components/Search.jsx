@@ -1,13 +1,22 @@
-import React from 'react'
+'use client';
 
-const Search = () => {
+import React, { useState } from 'react'
+
+const Search = ({ setSearch }) => {
+  const [query, setQuery] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSearch(query);
+  }
+  
   return (
-    <div className='mt-20 text-center'>
-      <h2 className='text-3xl font-semibold mb-10'>
-        The best free high resolution photos
+    <form onSubmit={handleSubmit} className='mt-20 text-center p-10'>
+      <h2 className='text-3xl font-semibold  mb-10'>
+        Breathtaking, copyright-free images to elevate your projects.
       </h2>
-      <input className='p-2 border w-full' />
-    </div>
+      <input value={query} onChange={e => setQuery(e.target.value)} className='p-2 h-[50px] text-xl max-w-[500px] bg-transparent border w-full' />
+    </form>
   )
 }
 

@@ -1,25 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Geologica", sans-serif;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-@layer utilities {
-    @variants responsive {
-        .masonry {
-            column-gap: 1.5em;
-            column-count: 1;
-        }
-        .masonry-sm {
-            column-gap: 1.5em;
-            column-count: 2;
-        }
-        .masonry-md {
-            column-gap: 1.5em;
-            column-count: 3;
-        }
-        .break-inside {
-            break-inside: avoid;
-        }
-
-    }
+input:focus-visible {
+  outline: none;
 }
